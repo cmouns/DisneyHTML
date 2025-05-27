@@ -1,0 +1,265 @@
+/*{ definit le style global(selecteur universel)*/
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Indique que l'on va inclure les marges internes et bordure dans la tailles des parents*/
+  }
+
+  .container{
+    max-width: 1613px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+  .stitch-bg {
+  background-image: url('image/lilo_stitch_hero_4009_r_e7d96ac6.jpeg');
+  background-size: cover;         
+  background-position: center;   
+  background-repeat: no-repeat;   
+  min-height: 692px;
+  display: flex;               
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;          
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1em;
+    gap: 25px;
+  }
+
+
+.txtBar{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+
+}
+
+  ul li a{
+    text-decoration: none;
+    
+  }
+
+  a{
+    color: black;
+    font-size: 25px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 17px;
+
+  }
+.logoDisney{
+  width:90px;
+  height: 40px;
+}
+a:hover{
+  color : blue;
+}
+
+.stitch{
+    display: flex;
+    justify-content: flex-end;
+    width: 1600px;
+}
+
+.txtStitch{
+  display: flex;
+  flex-direction: column;
+  bottom: -50px;
+  left: -50px;
+  position: absolute;
+  transform: scale(0.5)
+}
+
+
+.cinema{
+  display: block;
+  font-size:45px;
+  margin-left: 155px;
+  }
+
+  .btnReservation {
+    display: flex;
+    align-self: center;
+    background-color: #6c789e;
+    color: #fff; 
+    border: none;
+    border-radius: 50px; 
+    padding: 30px 50px; 
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+
+    
+    
+
+  }
+
+  .btnInfo {
+    display: flex;
+    background: transparent;
+    align-self: center;
+    color: #222;
+    border: 2px solid #6c789e;
+    border-radius: 50px; 
+    padding: 25px 90px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 15px;
+
+  }
+    
+
+.cartes-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ececec;
+  height: 620px;
+
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #faf9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+  width: 340px;
+  margin: 20px;
+  
+}
+
+.imageCarte {
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #eee;
+  
+}
+
+.imageCarte img {
+  display: flex;
+  justify-content: str;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+
+}
+
+.contenuCarte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  min-width: 0;
+  min-height: 0;
+  padding: 18px 16px 16px 16px;
+  background: #faf9fa;
+  
+}
+
+.contenuCarte h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #181818;
+  font-family: Arial, sans-serif;
+}
+
+.contenuCarte p {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.etiquette-carte {
+  font-size: 13px;
+  color: #888;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.inscriptionDisney {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #004d56;
+  height: 620px;
+}
+
+.carteDisneyPlus {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  width: 340px;
+  margin: 20px;
+  
+}
+
+.imageDisneyPlus {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.imageDisneyPlus img {
+  display: flex;
+  justify-content: str;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+
+}
+
+.contenuDisneyPlus {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  min-width: 0;
+  min-height: 0;
+  padding: 18px 16px 16px 16px;  
+}
+
+.contenuDisneyPlus h3 {
+  font-size: 17px;
+  font-weight: 50;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.contenuDisneyPlus p {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.etiquette-disneyPlus {
+  font-size: 13px;
+  color: #888;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
